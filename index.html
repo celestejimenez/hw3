@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      const org1_depts = [
+  {
+    name: 'accounting',
+    children: [
+      { name: 'accounting payable', children: [] },
+      { name: 'accounting receivable', children: [] },
+    ],
+  },
+  {
+    name: 'finance',
+    children: [],
+  },
+]
+
+const org2_depts = [
+  {
+    name: 'accounting',
+    children: [
+      { name: 'accounting payable', children: [] },
+      {
+        name: 'accounting receivable',
+        children: [{ name: 'cash', children: [] }, { name: 'check', children: [] }],
+      },
+    ],
+  },
+  {
+    name: 'finance',
+    children: [{ name: 'investment', children: [] }],
+  },
+]
+
+    </script>
+</head>
+
+<body>
+    <header class="fixed-bar">
+        <h1 class= "page-title">IS 445 Homework</h1>
+    </header>
+    <h2 class="page-subtitle" >Organization 1</h2>
+
+    <div class="org1">
+        <p>testing info here</p>    
+    </div>
+
+    <h2 class="page-subtitle">Organization 2</h2>
+    <script>
+        // const depts = ["test", "second"];
+        //alert(depts);
+        // let index=1;
+        // alert(`${depts[0]}`);
+        // TEST alert(org1_depts[1]);
+// var deptsLen= depts.length;
+// var subdepts = [];
+// var subdeptsLen=subdepts.length;
+// TEST console.log(`${index}: ${org1_depts[index]}`,
+// alert(org2_depts);
+// console.log("hello world");
+
+function PrintDepts(depts) {
+    for (let index=0; index < org1_depts.length; index++) {
+    // depts.push ({name});
+    // subdepts.push({children}); 
+    console.log(`${index}: ${org1_depts[index]}`);
+    
+    // console.log(org1_depts[i]);}
+
+/* function PrintDepts(depts) {
+    const org1_depts = 
+}
+*/
+    }
+}
+
+    </script>
+</body>
+
+</html>
+
